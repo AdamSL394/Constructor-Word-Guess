@@ -1,9 +1,8 @@
 var Letter = require("./letter.js")
 
-
 var Word = function (str) {
     this.wordArray = [];
-    this.word = (str)
+    this.word = str;
     this.addWord = function () {
         for (var i = 0; i < this.word.length; i++) {
             this.wordArray.push(new Letter(this.word[i]))
@@ -19,8 +18,8 @@ var Word = function (str) {
 
     }
     this.checker = function (response) {
-        for (var i = 0; i < wordArray.length; i++) {
-            if (response === this.wordArray[i].array1) {
+        for (var i = 0; i < this.wordArray.length; i++) {
+            if (response == this.wordArray[i].array1) {
                 this.wordArray[i].letterGuess = true;
             }
         }

@@ -1,8 +1,7 @@
 
 var Letter = function (str) {
-
     this.array1 = (str);
-    this.letterGuess;
+    this.letterGuess = false;
     this.setup = function (str) {
         if (this.letterGuess === true) {
             return this.array1;
